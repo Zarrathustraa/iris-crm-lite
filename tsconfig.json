@@ -13,12 +13,12 @@
     "jsx": "preserve",
     "incremental": true,
     "plugins": [{"name": "next"}],
-    "paths": {"@/*": ["./src/*"]},
-    "ts-node": {
-      "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node"
-      }
+    "paths": {"@/*": ["./src/*"]}
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node"
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
