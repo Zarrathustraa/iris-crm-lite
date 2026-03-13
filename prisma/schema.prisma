@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Prospect {
+  id              String   @id @default(cuid())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Identity
+  businessName    String
+  contactName     String?
+  title           String?
+  email           String?
+  phone           String?
+  website         String?
+
+  // Location
+  city            String?
+  state           String   @default("NJ")
+  zip             String?
+  address         String?
+
+  // Business
+  serviceType     String?   // e.g. Plumbing, HVAC, Roofing
+  licenseNumber   String?
+  yearsInBusiness Int?
+  employeeCount   String?   // range string e.g. "1-5"
+
+  // CRM
+  status          ProspectStatus @default(NEW)
+  priority        Priority       @default(MEDIUM)
+  source          String?        // e.g. "Google Sheet Import"
+  assignedTo      String?
+  tags            String[]       @default([])
+  notes           String?
+
+  // Sheet sync
+  sheetRowIndex   Int?           @unique
+  lastSyncedAt    DateTime?
+
+  // Relations
+  activities      Activity[]
+  tasks           Task[]
+}
+
+enum ProspectStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  PROPOSAL_SENT
+  NEGOTIATING
+  CLOSED_WON
+  CLOSED_LOST
+  ON_HOLD
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+model Activity {
+  id          String       @id @default(cuid())
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  prospectId  String
+  prospect    Prospect     @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+
+  type        ActivityType
+  subject     String
+  body        String?
+  outcome     String?
+  duration    Int?         // minutes
+  occurredAt  DateTime     @default(now())
+  createdBy   String?      // user name/email
+}
+
+enum ActivityType {
+  CALL
+  EMAIL
+  NOTE
+  MEETING
+  SMS
+  VOICEMAIL
+}
+
+model Task {
+  id          String     @id @default(cuid())
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  prospectId  String
+  prospect    Prospect   @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+
+  title       String
+  description String?
+  dueDate     DateTime?
+  completedAt DateTime?
+  priority    Priority   @default(MEDIUM)
+  assignedTo  String?
+  status      TaskStatus @default(PENDING)
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+model SyncLog {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  status      String   // success | error | partial
+  rowsRead    Int      @default(0)
+  rowsUpserted Int     @default(0)
+  rowsSkipped Int      @default(0)
+  errorMsg    String?
+  triggeredBy String?  // manual | cron | webhook
+}
