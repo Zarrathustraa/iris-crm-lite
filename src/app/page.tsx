@@ -1,1 +1,5 @@
-aW1wb3J0IHsgcmVkaXJlY3QgfSBmcm9tICduZXh0L25hdmlnYXRpb24nCgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkgewogIHJlZGlyZWN0KCcvZGFzaGJvYXJkJykKfQo=
+import { redirect } from 'next/navigation'
+
+export default function Home() {
+  redirect('/dashboard')
+}
