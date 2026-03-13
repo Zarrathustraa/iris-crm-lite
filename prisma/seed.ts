@@ -1,1 +1,55 @@
-aW1wb3J0IHsgUHJpc21hQ2xpZW50LCBQcm9zcGVjdFN0YXR1cywgUHJpb3JpdHksIEFjdGl2aXR5VHlwZSwgVGFza1N0YXR1cyB9IGZyb20gJ0BwcmlzbWEvY2xpZW50JwoKY29uc3QgcHJpc21hID0gbmV3IFByaXNtYUNsaWVudCgpCgphc3luYyBmdW5jdGlvbiBtYWluKCkgewogIGNvbnNvbGUubG9nKCdTZWVkaW5nIGRhdGFiYXNlLi4uJykKCiAgY29uc3QgcHJvc3BlY3QgPSBhd2FpdCBwcmlzbWEucHJvc3BlY3QudXBzZXJ0KHsKICAgIHdoZXJlOiB7IHNoZWV0Um93SW5kZXg6IDAgfSwKICAgIHVwZGF0ZToge30sCiAgICBjcmVhdGU6IHsKICAgICAgYnVzaW5lc3NOYW1lOiAnQUJDIFBsdW1iaW5nIExMQycsCiAgICAgIGNvbnRhY3ROYW1lOiAnSm9obiBTbWl0aCcsCiAgICAgIHRpdGxlOiAnT3duZXInLAogICAgICBlbWFpbDogJ2pvaG5AYWJjcGx1bWJpbmcuY29tJywKICAgICAgcGhvbmU6ICcoMjAxKSA1NTUtMDEwMScsCiAgICAgIGNpdHk6ICdOZXdhcmsnLAogICAgICBzdGF0ZTogJ05KJywKICAgICAgemlwOiAnMDcxMDEnLAogICAgICBzZXJ2aWNlVHlwZTogJ1BsdW1iaW5nJywKICAgICAgc3RhdHVzOiBQcm9zcGVjdFN0YXR1cy5ORVcsCiAgICAgIHByaW9yaXR5OiBQcmlvcml0eS5ISUdILAogICAgICBzb3VyY2U6ICdTZWVkJywKICAgICAgc2hlZXRSb3dJbmRleDogMCwKICAgIH0sCiAgfSkKCiAgYXdhaXQgcHJpc21hLmFjdGl2aXR5LmNyZWF0ZSh7CiAgICBkYXRhOiB7CiAgICAgIHByb3NwZWN0SWQ6IHByb3NwZWN0LmlkLAogICAgICB0eXBlOiBBY3Rpdml0eVR5cGUuQ0FMTCwKICAgICAgc3ViamVjdDogJ0luaXRpYWwgb3V0cmVhY2ggY2FsbCcsCiAgICAgIGJvZHk6ICdMZWZ0IHZvaWNlbWFpbCwgZm9sbG93IHVwIGluIDMgZGF5cycsCiAgICAgIG91dGNvbWU6ICdWb2ljZW1haWwnLAogICAgICBkdXJhdGlvbjogMiwKICAgIH0sCiAgfSkKCiAgYXdhaXQgcHJpc21hLnRhc2suY3JlYXRlKHsKICAgIGRhdGE6IHsKICAgICAgcHJvc3BlY3RJZDogcHJvc3BlY3QuaWQsCiAgICAgIHRpdGxlOiAnRm9sbG93IHVwIGNhbGwnLAogICAgICBkZXNjcmlwdGlvbjogJ0NhbGwgYmFjayBhZnRlciB2b2ljZW1haWwnLAogICAgICBkdWVEYXRlOiBuZXcgRGF0ZShEYXRlLm5vdygpICsgMyAqIDI0ICogNjAgKiA2MCAqIDEwMDApLAogICAgICBwcmlvcml0eTogUHJpb3JpdHkuSElHSCwKICAgICAgc3RhdHVzOiBUYXNrU3RhdHVzLlBFTkRJTkcsCiAgICB9LAogIH0pCgogIGNvbnNvbGUubG9nKCdTZWVkIGNvbXBsZXRlLicpCn0KCm1haW4oKQogIC5jYXRjaChjb25zb2xlLmVycm9yKQogIC5maW5hbGx5KCgpID0+IHByaXNtYS4kZGlzY29ubmVjdCgpKQo=
+import { PrismaClient, ProspectStatus, Priority, ActivityType, TaskStatus } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
+async function main() {
+  console.log('Seeding database...')
+
+  const prospect = await prisma.prospect.upsert({
+    where: { sheetRowIndex: 0 },
+    update: {},
+    create: {
+      businessName: 'ABC Plumbing LLC',
+      contactName: 'John Smith',
+      title: 'Owner',
+      email: 'john@abcplumbing.com',
+      phone: '(201) 555-0101',
+      city: 'Newark',
+      state: 'NJ',
+      zip: '07101',
+      serviceType: 'Plumbing',
+      status: ProspectStatus.NEW,
+      priority: Priority.HIGH,
+      source: 'Seed',
+      sheetRowIndex: 0,
+    },
+  })
+
+  await prisma.activity.create({
+    data: {
+      prospectId: prospect.id,
+      type: ActivityType.CALL,
+      subject: 'Initial outreach call',
+      body: 'Left voicemail, follow up in 3 days',
+      outcome: 'Voicemail',
+      duration: 2,
+    },
+  })
+
+  await prisma.task.create({
+    data: {
+      prospectId: prospect.id,
+      title: 'Follow up call',
+      description: 'Call back after voicemail',
+      dueDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+      priority: Priority.HIGH,
+      status: TaskStatus.PENDING,
+    },
+  })
+
+  console.log('Seed complete.')
+}
+
+main()
+  .catch(console.error)
+  .finally(() => prisma.$disconnect())
