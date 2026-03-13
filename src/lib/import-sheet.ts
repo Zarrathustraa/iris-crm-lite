@@ -1,1 +1,155 @@
-aW1wb3J0IHsgZ29vZ2xlIH0gZnJvbSAnZ29vZ2xlYXBpcycKaW1wb3J0IHsgcHJpc21hIH0gZnJvbSAnLi9kYicKaW1wb3J0IHsgUHJvc3BlY3RTdGF0dXMsIFByaW9yaXR5IH0gZnJvbSAnQHByaXNtYS9jbGllbnQnCgppbnRlcmZhY2UgU2hlZXRSb3cgewogIFtrZXk6IHN0cmluZ106IHN0cmluZwp9CgpmdW5jdGlvbiBtYXBTdGF0dXModmFsOiBzdHJpbmcpOiBQcm9zcGVjdFN0YXR1cyB7CiAgY29uc3QgdiA9ICh2YWwgfHwgJycpLnRvVXBwZXJDYXNlKCkucmVwbGFjZSgvXHMrL2csICdfJykKICBjb25zdCBtYXA6IFJlY29yZDxzdHJpbmcsIFByb3NwZWN0U3RhdHVzPiA9IHsKICAgIE5FVzogJ05FVycsCiAgICBDT05UQUNURUQ6ICdDT05UQUNURUQnLAogICAgUVVBTElGSUVEOiAnUVVBTElGSUVEJywKICAgIFBST1BPU0FMOiAnUFJPUE9TQUxfU0VOVCcsCiAgICBQUk9QT1NBTF9TRU5UOiAnUFJPUE9TQUxfU0VOVCcsCiAgICBORUdPVElBVElORzogJ05FR09USUFUSU5HJywKICAgIENMT1NFRF9XT046ICdDTE9TRURfV09OJywKICAgIFdPTjogJ0NMT1NFRF9XT04nLAogICAgQ0xPU0VEX0xPU1Q6ICdDTE9TRURfTE9TVCcsCiAgICBMT1NUOiAnQ0xPU0VEX0xPU1QnLAogICAgT05fSE9MRDogJ09OX0hPTEQnLAogIH0KICByZXR1cm4gbWFwW3ZdIHx8ICdORVcnCn0KCmZ1bmN0aW9uIG1hcFByaW9yaXR5KHZhbDogc3RyaW5nKTogUHJpb3JpdHkgewogIGNvbnN0IHYgPSAodmFsIHx8ICcnKS50b1VwcGVyQ2FzZSgpCiAgY29uc3QgbWFwOiBSZWNvcmQ8c3RyaW5nLCBQcmlvcml0eT4gPSB7CiAgICBMT1c6ICdMT1cnLCBNRURJVU06ICdNRURJVU0nLCBISUdIOiAnSElHSCcsIFVSR0VOVDogJ1VSR0VOVCcsCiAgfQogIHJldHVybiBtYXBbdl0gfHwgJ01FRElVTScKfQoKZnVuY3Rpb24gY29sKHJvdzogU2hlZXRSb3csIC4uLmtleXM6IHN0cmluZ1tdKTogc3RyaW5nIHsKICBmb3IgKGNvbnN0IGsgb2Yga2V5cykgewogICAgY29uc3QgdmFsID0gcm93W2tdIHx8IHJvd1trLnRvTG93ZXJDYXNlKCldIHx8IHJvd1trLnRvVXBwZXJDYXNlKCldCiAgICBpZiAodmFsICYmIHZhbC50cmltKCkpIHJldHVybiB2YWwudHJpbSgpCiAgfQogIHJldHVybiAnJwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gaW1wb3J0RnJvbVNoZWV0KHRyaWdnZXJlZEJ5ID0gJ21hbnVhbCcpOiBQcm9taXNlPHsKICByb3dzUmVhZDogbnVtYmVyCiAgcm93c1Vwc2VydGVkOiBudW1iZXIKICByb3dzU2tpcHBlZDogbnVtYmVyCiAgZXJyb3I/OiBzdHJpbmcKfT4gewogIGNvbnN0IHNwcmVhZHNoZWV0SWQgPSBwcm9jZXNzLmVudi5HT09HTEVfU1BSRUFEU0hFRVRfSUQhCiAgY29uc3Qgc2hlZXROYW1lID0gcHJvY2Vzcy5lbnYuR09PR0xFX1NIRUVUX05BTUUgfHwgJ1NoZWV0MScKCiAgY29uc3QgYXV0aCA9IG5ldyBnb29nbGUuYXV0aC5Hb29nbGVBdXRoKHsKICAgIGNyZWRlbnRpYWxzOiB7CiAgICAgIGNsaWVudF9lbWFpbDogcHJvY2Vzcy5lbnYuR09PR0xFX1NFUlZJQ0VfQUNDT1VOVF9FTUFJTCwKICAgICAgcHJpdmF0ZV9rZXk6IHByb2Nlc3MuZW52LkdPT0dMRV9QUklWQVRFX0tFWT8ucmVwbGFjZSgvXFxuL2csICdcbicpLAogICAgfSwKICAgIHNjb3BlczogWydodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL3NwcmVhZHNoZWV0cy5yZWFkb25seSddLAogIH0pCgogIGNvbnN0IHNoZWV0cyA9IGdvb2dsZS5zaGVldHMoeyB2ZXJzaW9uOiAndjQnLCBhdXRoIH0pCiAgY29uc3QgcmVzID0gYXdhaXQgc2hlZXRzLnNwcmVhZHNoZWV0cy52YWx1ZXMuZ2V0KHsKICAgIHNwcmVhZHNoZWV0SWQsCiAgICByYW5nZTogc2hlZXROYW1lLAogIH0pCgogIGNvbnN0IHJvd3MgPSByZXMuZGF0YS52YWx1ZXMgfHwgW10KICBpZiAocm93cy5sZW5ndGggPCAyKSB7CiAgICByZXR1cm4geyByb3dzUmVhZDogMCwgcm93c1Vwc2VydGVkOiAwLCByb3dzU2tpcHBlZDogMCwgZXJyb3I6ICdObyBkYXRhIHJvd3MgZm91bmQnIH0KICB9CgogIGNvbnN0IGhlYWRlcnMgPSByb3dzWzBdLm1hcCgoaDogc3RyaW5nKSA9PiAoaCB8fCAnJykudHJpbSgpKQogIGNvbnN0IGRhdGFSb3dzOiBTaGVldFJvd1tdID0gcm93cy5zbGljZSgxKS5tYXAoKHJvdzogc3RyaW5nW10pID0+IHsKICAgIGNvbnN0IG9iajogU2hlZXRSb3cgPSB7fQogICAgaGVhZGVycy5mb3JFYWNoKChoOiBzdHJpbmcsIGk6IG51bWJlcikgPT4geyBvYmpbaF0gPSByb3dbaV0gfHwgJycgfSkKICAgIHJldHVybiBvYmoKICB9KQoKICBsZXQgcm93c1Vwc2VydGVkID0gMAogIGxldCByb3dzU2tpcHBlZCA9IDAKCiAgZm9yIChsZXQgaSA9IDA7IGkgPCBkYXRhUm93cy5sZW5ndGg7IGkrKykgewogICAgY29uc3Qgcm93ID0gZGF0YVJvd3NbaV0KICAgIGNvbnN0IGJ1c2luZXNzTmFtZSA9IGNvbChyb3csICdCdXNpbmVzcyBOYW1lJywgJ0NvbXBhbnknLCAnTmFtZScsICdidXNpbmVzc19uYW1lJykKICAgIGlmICghYnVzaW5lc3NOYW1lKSB7IHJvd3NTa2lwcGVkKys7IGNvbnRpbnVlIH0KCiAgICB0cnkgewogICAgICBhd2FpdCBwcmlzbWEucHJvc3BlY3QudXBzZXJ0KHsKICAgICAgICB3aGVyZTogeyBzaGVldFJvd0luZGV4OiBpICsgMiB9LCAvLyAxLWluZGV4ZWQsIHJvdyAxID0gaGVhZGVyCiAgICAgICAgdXBkYXRlOiB7CiAgICAgICAgICBidXNpbmVzc05hbWUsCiAgICAgICAgICBjb250YWN0TmFtZTogY29sKHJvdywgJ0NvbnRhY3QgTmFtZScsICdDb250YWN0JywgJ093bmVyJywgJ2NvbnRhY3RfbmFtZScpIHx8IG51bGwsCiAgICAgICAgICB0aXRsZTogY29sKHJvdywgJ1RpdGxlJywgJ1JvbGUnKSB8fCBudWxsLAogICAgICAgICAgZW1haWw6IGNvbChyb3csICdFbWFpbCcsICdFbWFpbCBBZGRyZXNzJykgfHwgbnVsbCwKICAgICAgICAgIHBob25lOiBjb2wocm93LCAnUGhvbmUnLCAnUGhvbmUgTnVtYmVyJywgJ0NlbGwnKSB8fCBudWxsLAogICAgICAgICAgd2Vic2l0ZTogY29sKHJvdywgJ1dlYnNpdGUnLCAnVVJMJykgfHwgbnVsbCwKICAgICAgICAgIGNpdHk6IGNvbChyb3csICdDaXR5JykgfHwgbnVsbCwKICAgICAgICAgIHN0YXRlOiBjb2wocm93LCAnU3RhdGUnKSB8fCAnTkonLAogICAgICAgICAgemlwOiBjb2wocm93LCAnWmlwJywgJ1pJUCcsICdaaXAgQ29kZScpIHx8IG51bGwsCiAgICAgICAgICBhZGRyZXNzOiBjb2wocm93LCAnQWRkcmVzcycsICdTdHJlZXQnKSB8fCBudWxsLAogICAgICAgICAgc2VydmljZVR5cGU6IGNvbChyb3csICdTZXJ2aWNlIFR5cGUnLCAnVHJhZGUnLCAnQ2F0ZWdvcnknLCAnc2VydmljZV90eXBlJykgfHwgbnVsbCwKICAgICAgICAgIGxpY2Vuc2VOdW1iZXI6IGNvbChyb3csICdMaWNlbnNlJywgJ0xpY2Vuc2UgIycsICdMaWNlbnNlIE51bWJlcicpIHx8IG51bGwsCiAgICAgICAgICBzdGF0dXM6IG1hcFN0YXR1cyhjb2wocm93LCAnU3RhdHVzJykpLAogICAgICAgICAgcHJpb3JpdHk6IG1hcFByaW9yaXR5KGNvbChyb3csICdQcmlvcml0eScpKSwKICAgICAgICAgIG5vdGVzOiBjb2wocm93LCAnTm90ZXMnLCAnQ29tbWVudHMnKSB8fCBudWxsLAogICAgICAgICAgYXNzaWduZWRUbzogY29sKHJvdywgJ0Fzc2lnbmVkIFRvJywgJ093bmVyJywgJ1JlcCcpIHx8IG51bGwsCiAgICAgICAgICBsYXN0U3luY2VkQXQ6IG5ldyBEYXRlKCksCiAgICAgICAgfSwKICAgICAgICBjcmVhdGU6IHsKICAgICAgICAgIHNoZWV0Um93SW5kZXg6IGkgKyAyLAogICAgICAgICAgYnVzaW5lc3NOYW1lLAogICAgICAgICAgY29udGFjdE5hbWU6IGNvbChyb3csICdDb250YWN0IE5hbWUnLCAnQ29udGFjdCcsICdPd25lcicsICdjb250YWN0X25hbWUnKSB8fCBudWxsLAogICAgICAgICAgdGl0bGU6IGNvbChyb3csICdUaXRsZScsICdSb2xlJykgfHwgbnVsbCwKICAgICAgICAgIGVtYWlsOiBjb2wocm93LCAnRW1haWwnLCAnRW1haWwgQWRkcmVzcycpIHx8IG51bGwsCiAgICAgICAgICBwaG9uZTogY29sKHJvdywgJ1Bob25lJywgJ1Bob25lIE51bWJlcicsICdDZWxsJykgfHwgbnVsbCwKICAgICAgICAgIHdlYnNpdGU6IGNvbChyb3csICdXZWJzaXRlJywgJ1VSTCcpIHx8IG51bGwsCiAgICAgICAgICBjaXR5OiBjb2wocm93LCAnQ2l0eScpIHx8IG51bGwsCiAgICAgICAgICBzdGF0ZTogY29sKHJvdywgJ1N0YXRlJykgfHwgJ05KJywKICAgICAgICAgIHppcDogY29sKHJvdywgJ1ppcCcsICdaSVAnLCAnWmlwIENvZGUnKSB8fCBudWxsLAogICAgICAgICAgYWRkcmVzczogY29sKHJvdywgJ0FkZHJlc3MnLCAnU3RyZWV0JykgfHwgbnVsbCwKICAgICAgICAgIHNlcnZpY2VUeXBlOiBjb2wocm93LCAnU2VydmljZSBUeXBlJywgJ1RyYWRlJywgJ0NhdGVnb3J5JywgJ3NlcnZpY2VfdHlwZScpIHx8IG51bGwsCiAgICAgICAgICBsaWNlbnNlTnVtYmVyOiBjb2wocm93LCAnTGljZW5zZScsICdMaWNlbnNlICMnLCAnTGljZW5zZSBOdW1iZXInKSB8fCBudWxsLAogICAgICAgICAgc3RhdHVzOiBtYXBTdGF0dXMoY29sKHJvdywgJ1N0YXR1cycpKSwKICAgICAgICAgIHByaW9yaXR5OiBtYXBQcmlvcml0eShjb2wocm93LCAnUHJpb3JpdHknKSksCiAgICAgICAgICBub3RlczogY29sKHJvdywgJ05vdGVzJywgJ0NvbW1lbnRzJykgfHwgbnVsbCwKICAgICAgICAgIGFzc2lnbmVkVG86IGNvbChyb3csICdBc3NpZ25lZCBUbycsICdPd25lcicsICdSZXAnKSB8fCBudWxsLAogICAgICAgICAgc291cmNlOiAnR29vZ2xlIFNoZWV0IEltcG9ydCcsCiAgICAgICAgICBsYXN0U3luY2VkQXQ6IG5ldyBEYXRlKCksCiAgICAgICAgfSwKICAgICAgfSkKICAgICAgcm93c1Vwc2VydGVkKysKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgcm93c1NraXBwZWQrKwogICAgfQogIH0KCiAgYXdhaXQgcHJpc21hLnN5bmNMb2cuY3JlYXRlKHsKICAgIGRhdGE6IHsKICAgICAgc3RhdHVzOiAnc3VjY2VzcycsCiAgICAgIHJvd3NSZWFkOiBkYXRhUm93cy5sZW5ndGgsCiAgICAgIHJvd3NVcHNlcnRlZCwKICAgICAgcm93c1NraXBwZWQsCiAgICAgIHRyaWdnZXJlZEJ5LAogICAgfSwKICB9KQoKICByZXR1cm4geyByb3dzUmVhZDogZGF0YVJvd3MubGVuZ3RoLCByb3dzVXBzZXJ0ZWQsIHJvd3NTa2lwcGVkIH0KfQoKLy8gQ0xJIGVudHJ5IHBvaW50CmlmIChyZXF1aXJlLm1haW4gPT09IG1vZHVsZSkgewogIGltcG9ydEZyb21TaGVldCgnY2xpJykKICAgIC50aGVuKHIgPT4gY29uc29sZS5sb2coJ0ltcG9ydCBjb21wbGV0ZTonLCByKSkKICAgIC5jYXRjaChjb25zb2xlLmVycm9yKQogICAgLmZpbmFsbHkoKCkgPT4gcHJpc21hLiRkaXNjb25uZWN0KCkpCn0K
+import { google } from 'googleapis'
+import { prisma } from './db'
+import { ProspectStatus, Priority } from '@prisma/client'
+
+interface SheetRow {
+  [key: string]: string
+}
+
+function mapStatus(val: string): ProspectStatus {
+  const v = (val || '').toUpperCase().replace(/\s+/g, '_')
+  const map: Record<string, ProspectStatus> = {
+    NEW: 'NEW',
+    CONTACTED: 'CONTACTED',
+    QUALIFIED: 'QUALIFIED',
+    PROPOSAL: 'PROPOSAL_SENT',
+    PROPOSAL_SENT: 'PROPOSAL_SENT',
+    NEGOTIATING: 'NEGOTIATING',
+    CLOSED_WON: 'CLOSED_WON',
+    WON: 'CLOSED_WON',
+    CLOSED_LOST: 'CLOSED_LOST',
+    LOST: 'CLOSED_LOST',
+    ON_HOLD: 'ON_HOLD',
+  }
+  return map[v] || 'NEW'
+}
+
+function mapPriority(val: string): Priority {
+  const v = (val || '').toUpperCase()
+  const map: Record<string, Priority> = {
+    LOW: 'LOW', MEDIUM: 'MEDIUM', HIGH: 'HIGH', URGENT: 'URGENT',
+  }
+  return map[v] || 'MEDIUM'
+}
+
+function col(row: SheetRow, ...keys: string[]): string {
+  for (const k of keys) {
+    const val = row[k] || row[k.toLowerCase()] || row[k.toUpperCase()]
+    if (val && val.trim()) return val.trim()
+  }
+  return ''
+}
+
+export async function importFromSheet(triggeredBy = 'manual'): Promise<{
+  rowsRead: number
+  rowsUpserted: number
+  rowsSkipped: number
+  error?: string
+}> {
+  const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID!
+  const sheetName = process.env.GOOGLE_SHEET_NAME || 'Sheet1'
+
+  const auth = new google.auth.GoogleAuth({
+    credentials: {
+      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+    },
+    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+  })
+
+  const sheets = google.sheets({ version: 'v4', auth })
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId,
+    range: sheetName,
+  })
+
+  const rows = res.data.values || []
+  if (rows.length < 2) {
+    return { rowsRead: 0, rowsUpserted: 0, rowsSkipped: 0, error: 'No data rows found' }
+  }
+
+  const headers = rows[0].map((h: string) => (h || '').trim())
+  const dataRows: SheetRow[] = rows.slice(1).map((row: string[]) => {
+    const obj: SheetRow = {}
+    headers.forEach((h: string, i: number) => { obj[h] = row[i] || '' })
+    return obj
+  })
+
+  let rowsUpserted = 0
+  let rowsSkipped = 0
+
+  for (let i = 0; i < dataRows.length; i++) {
+    const row = dataRows[i]
+    const businessName = col(row, 'Business Name', 'Company', 'Name', 'business_name')
+    if (!businessName) { rowsSkipped++; continue }
+
+    try {
+      await prisma.prospect.upsert({
+        where: { sheetRowIndex: i + 2 }, // 1-indexed, row 1 = header
+        update: {
+          businessName,
+          contactName: col(row, 'Contact Name', 'Contact', 'Owner', 'contact_name') || null,
+          title: col(row, 'Title', 'Role') || null,
+          email: col(row, 'Email', 'Email Address') || null,
+          phone: col(row, 'Phone', 'Phone Number', 'Cell') || null,
+          website: col(row, 'Website', 'URL') || null,
+          city: col(row, 'City') || null,
+          state: col(row, 'State') || 'NJ',
+          zip: col(row, 'Zip', 'ZIP', 'Zip Code') || null,
+          address: col(row, 'Address', 'Street') || null,
+          serviceType: col(row, 'Service Type', 'Trade', 'Category', 'service_type') || null,
+          licenseNumber: col(row, 'License', 'License #', 'License Number') || null,
+          status: mapStatus(col(row, 'Status')),
+          priority: mapPriority(col(row, 'Priority')),
+          notes: col(row, 'Notes', 'Comments') || null,
+          assignedTo: col(row, 'Assigned To', 'Owner', 'Rep') || null,
+          lastSyncedAt: new Date(),
+        },
+        create: {
+          sheetRowIndex: i + 2,
+          businessName,
+          contactName: col(row, 'Contact Name', 'Contact', 'Owner', 'contact_name') || null,
+          title: col(row, 'Title', 'Role') || null,
+          email: col(row, 'Email', 'Email Address') || null,
+          phone: col(row, 'Phone', 'Phone Number', 'Cell') || null,
+          website: col(row, 'Website', 'URL') || null,
+          city: col(row, 'City') || null,
+          state: col(row, 'State') || 'NJ',
+          zip: col(row, 'Zip', 'ZIP', 'Zip Code') || null,
+          address: col(row, 'Address', 'Street') || null,
+          serviceType: col(row, 'Service Type', 'Trade', 'Category', 'service_type') || null,
+          licenseNumber: col(row, 'License', 'License #', 'License Number') || null,
+          status: mapStatus(col(row, 'Status')),
+          priority: mapPriority(col(row, 'Priority')),
+          notes: col(row, 'Notes', 'Comments') || null,
+          assignedTo: col(row, 'Assigned To', 'Owner', 'Rep') || null,
+          source: 'Google Sheet Import',
+          lastSyncedAt: new Date(),
+        },
+      })
+      rowsUpserted++
+    } catch (e) {
+      rowsSkipped++
+    }
+  }
+
+  await prisma.syncLog.create({
+    data: {
+      status: 'success',
+      rowsRead: dataRows.length,
+      rowsUpserted,
+      rowsSkipped,
+      triggeredBy,
+    },
+  })
+
+  return { rowsRead: dataRows.length, rowsUpserted, rowsSkipped }
+}
+
+// CLI entry point
+if (require.main === module) {
+  importFromSheet('cli')
+    .then(r => console.log('Import complete:', r))
+    .catch(console.error)
+    .finally(() => prisma.$disconnect())
+}
