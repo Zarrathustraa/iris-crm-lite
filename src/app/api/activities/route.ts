@@ -1,36 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/db'
+import { prisma } from '@/lib/prisma'
 
-export async function GET(req: NextRequest) {
-  const { searchParams } = req.nextUrl
-  const prospectId = searchParams.get('prospectId')
-  const type = searchParams.get('type')
-  const page = parseInt(searchParams.get('page') || '1')
-  const pageSize = parseInt(searchParams.get('pageSize') || '20')
+export const dynamic = 'force-dynamic'
 
-  const where: Record<string, unknown> = {}
-  if (prospectId) where.prospectId = prospectId
-  if (type) where.type = type
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url)
+    const prospectId = searchParams.get('prospectId')
+    const limit = parseInt(searchParams.get('limit') || '20')
 
-  const [total, activities] = await Promise.all([
-    prisma.activity.count({ where }),
-    prisma.activity.findMany({
+    const where: Record<string, unknown> = {}
+    if (prospectId) where.prospectId = prospectId
+
+    const activities = await prisma.activity.findMany({
       where,
-      orderBy: { occurredAt: 'desc' },
-      skip: (page - 1) * pageSize,
-      take: pageSize,
-      include: { prospect: { select: { businessName: true } } },
-    }),
-  ])
+      include: { prospect: { select: { companyName: true, contactName: true } } },
+      orderBy: { createdAt: 'desc' },
+      take: limit,
+    })
 
-  return NextResponse.json({ data: activities, total, page, pageSize })
+    return NextResponse.json({ activities })
+  } catch (error) {
+    console.error('Activities API error:', error)
+    return NextResponse.json({ activities: [] })
+  }
 }
 
-export async function POST(req: NextRequest) {
-  const body = await req.json()
-  const activity = await prisma.activity.create({
-    data: body,
-    include: { prospect: { select: { businessName: true } } },
-  })
-  return NextResponse.json({ data: activity }, { status: 201 })
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json()
+    const { prospectId, type, notes, outcome, duration } = body
+
+    const activity = await prisma.activity.create({
+      data: { prospectId, type, notes, outcome, duration: duration ? parseInt(duration) : null },
+    })
+
+    // Update prospect lastContactedAt
+    await prisma.prospect.update({
+      where: { id: prospectId },
+      data: { lastContactedAt: new Date() },
+    })
+
+    return NextResponse.json(activity, { status: 201 })
+  } catch (error) {
+    console.error('Create activity error:', error)
+    return NextResponse.json({ error: 'Failed to create activity' }, { status: 500 })
+  }
 }
