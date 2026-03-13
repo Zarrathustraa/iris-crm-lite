@@ -1,1 +1,28 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gJ25leHQnCmltcG9ydCB7IEludGVyIH0gZnJvbSAnbmV4dC9mb250L2dvb2dsZScKaW1wb3J0ICcuL2dsb2JhbHMuY3NzJwppbXBvcnQgeyBTaWRlYmFyIH0gZnJvbSAnQC9jb21wb25lbnRzL1NpZGViYXInCgpjb25zdCBpbnRlciA9IEludGVyKHsgc3Vic2V0czogWydsYXRpbiddIH0pCgpleHBvcnQgY29uc3QgbWV0YWRhdGE6IE1ldGFkYXRhID0gewogIHRpdGxlOiAnSXJpcyBDUk0gTGl0ZScsCiAgZGVzY3JpcHRpb246ICdOSiBIb21lLVNlcnZpY2UgQ29udHJhY3RvciBPdXRyZWFjaCBUcmFja2VyJywKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUm9vdExheW91dCh7IGNoaWxkcmVuIH06IHsgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZSB9KSB7CiAgcmV0dXJuICgKICAgIDxodG1sIGxhbmc9ImVuIj4KICAgICAgPGJvZHkgY2xhc3NOYW1lPXtpbnRlci5jbGFzc05hbWV9PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtc2NyZWVuIG92ZXJmbG93LWhpZGRlbiI+CiAgICAgICAgICA8U2lkZWJhciAvPgogICAgICAgICAgPG1haW4gY2xhc3NOYW1lPSJmbGV4LTEgb3ZlcmZsb3cteS1hdXRvIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InAtNiBtYXgtdy03eGwgbXgtYXV0byI+CiAgICAgICAgICAgICAge2NoaWxkcmVufQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvbWFpbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9ib2R5PgogICAgPC9odG1sPgogICkKfQo=
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import { Sidebar } from '@/components/Sidebar'
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'Iris CRM Lite',
+  description: 'NJ Home-Service Contractor Outreach Tracker',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <div className="flex h-screen overflow-hidden">
+          <Sidebar />
+          <main className="flex-1 overflow-y-auto">
+            <div className="p-6 max-w-7xl mx-auto">
+              {children}
+            </div>
+          </main>
+        </div>
+      </body>
+    </html>
+  )
+}
