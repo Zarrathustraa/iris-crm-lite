@@ -1,1 +1,36 @@
-aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJwppbXBvcnQgeyBwcmlzbWEgfSBmcm9tICdAL2xpYi9kYicKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxOiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IHsgc2VhcmNoUGFyYW1zIH0gPSByZXEubmV4dFVybAogIGNvbnN0IHByb3NwZWN0SWQgPSBzZWFyY2hQYXJhbXMuZ2V0KCdwcm9zcGVjdElkJykKICBjb25zdCB0eXBlID0gc2VhcmNoUGFyYW1zLmdldCgndHlwZScpCiAgY29uc3QgcGFnZSA9IHBhcnNlSW50KHNlYXJjaFBhcmFtcy5nZXQoJ3BhZ2UnKSB8fCAnMScpCiAgY29uc3QgcGFnZVNpemUgPSBwYXJzZUludChzZWFyY2hQYXJhbXMuZ2V0KCdwYWdlU2l6ZScpIHx8ICcyMCcpCgogIGNvbnN0IHdoZXJlOiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPiA9IHt9CiAgaWYgKHByb3NwZWN0SWQpIHdoZXJlLnByb3NwZWN0SWQgPSBwcm9zcGVjdElkCiAgaWYgKHR5cGUpIHdoZXJlLnR5cGUgPSB0eXBlCgogIGNvbnN0IFt0b3RhbCwgYWN0aXZpdGllc10gPSBhd2FpdCBQcm9taXNlLmFsbChbCiAgICBwcmlzbWEuYWN0aXZpdHkuY291bnQoeyB3aGVyZSB9KSwKICAgIHByaXNtYS5hY3Rpdml0eS5maW5kTWFueSh7CiAgICAgIHdoZXJlLAogICAgICBvcmRlckJ5OiB7IG9jY3VycmVkQXQ6ICdkZXNjJyB9LAogICAgICBza2lwOiAocGFnZSAtIDEpICogcGFnZVNpemUsCiAgICAgIHRha2U6IHBhZ2VTaXplLAogICAgICBpbmNsdWRlOiB7IHByb3NwZWN0OiB7IHNlbGVjdDogeyBidXNpbmVzc05hbWU6IHRydWUgfSB9IH0sCiAgICB9KSwKICBdKQoKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhOiBhY3Rpdml0aWVzLCB0b3RhbCwgcGFnZSwgcGFnZVNpemUgfSkKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIFBPU1QocmVxOiBOZXh0UmVxdWVzdCkgewogIGNvbnN0IGJvZHkgPSBhd2FpdCByZXEuanNvbigpCiAgY29uc3QgYWN0aXZpdHkgPSBhd2FpdCBwcmlzbWEuYWN0aXZpdHkuY3JlYXRlKHsKICAgIGRhdGE6IGJvZHksCiAgICBpbmNsdWRlOiB7IHByb3NwZWN0OiB7IHNlbGVjdDogeyBidXNpbmVzc05hbWU6IHRydWUgfSB9IH0sCiAgfSkKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhOiBhY3Rpdml0eSB9LCB7IHN0YXR1czogMjAxIH0pCn0K
+import { NextRequest, NextResponse } from 'next/server'
+import { prisma } from '@/lib/db'
+
+export async function GET(req: NextRequest) {
+  const { searchParams } = req.nextUrl
+  const prospectId = searchParams.get('prospectId')
+  const type = searchParams.get('type')
+  const page = parseInt(searchParams.get('page') || '1')
+  const pageSize = parseInt(searchParams.get('pageSize') || '20')
+
+  const where: Record<string, unknown> = {}
+  if (prospectId) where.prospectId = prospectId
+  if (type) where.type = type
+
+  const [total, activities] = await Promise.all([
+    prisma.activity.count({ where }),
+    prisma.activity.findMany({
+      where,
+      orderBy: { occurredAt: 'desc' },
+      skip: (page - 1) * pageSize,
+      take: pageSize,
+      include: { prospect: { select: { businessName: true } } },
+    }),
+  ])
+
+  return NextResponse.json({ data: activities, total, page, pageSize })
+}
+
+export async function POST(req: NextRequest) {
+  const body = await req.json()
+  const activity = await prisma.activity.create({
+    data: body,
+    include: { prospect: { select: { businessName: true } } },
+  })
+  return NextResponse.json({ data: activity }, { status: 201 })
+}
