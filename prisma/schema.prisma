@@ -1,1 +1,129 @@
-Z2VuZXJhdG9yIGNsaWVudCB7CiAgcHJvdmlkZXIgPSAicHJpc21hLWNsaWVudC1qcyIKfQoKZGF0YXNvdXJjZSBkYiB7CiAgcHJvdmlkZXIgPSAicG9zdGdyZXNxbCIKICB1cmwgICAgICA9IGVudigiREFUQUJBU0VfVVJMIikKfQoKbW9kZWwgUHJvc3BlY3QgewogIGlkICAgICAgICAgICAgICBTdHJpbmcgICBAaWQgQGRlZmF1bHQoY3VpZCgpKQogIGNyZWF0ZWRBdCAgICAgICBEYXRlVGltZSBAZGVmYXVsdChub3coKSkKICB1cGRhdGVkQXQgICAgICAgRGF0ZVRpbWUgQHVwZGF0ZWRBdAoKICAvLyBJZGVudGl0eQogIGJ1c2luZXNzTmFtZSAgICBTdHJpbmcKICBjb250YWN0TmFtZSAgICAgU3RyaW5nPwogIHRpdGxlICAgICAgICAgICBTdHJpbmc/CiAgZW1haWwgICAgICAgICAgIFN0cmluZz8KICBwaG9uZSAgICAgICAgICAgU3RyaW5nPwogIHdlYnNpdGUgICAgICAgICBTdHJpbmc/CgogIC8vIExvY2F0aW9uCiAgY2l0eSAgICAgICAgICAgIFN0cmluZz8KICBzdGF0ZSAgICAgICAgICAgU3RyaW5nICAgQGRlZmF1bHQoIk5KIikKICB6aXAgICAgICAgICAgICAgU3RyaW5nPwogIGFkZHJlc3MgICAgICAgICBTdHJpbmc/CgogIC8vIEJ1c2luZXNzCiAgc2VydmljZVR5cGUgICAgIFN0cmluZz8gICAvLyBlLmcuIFBsdW1iaW5nLCBIVkFDLCBSb29maW5nCiAgbGljZW5zZU51bWJlciAgIFN0cmluZz8KICB5ZWFyc0luQnVzaW5lc3MgSW50PwogIGVtcGxveWVlQ291bnQgICBTdHJpbmc/ICAgLy8gcmFuZ2Ugc3RyaW5nIGUuZy4gIjEtNSIKCiAgLy8gQ1JNCiAgc3RhdHVzICAgICAgICAgIFByb3NwZWN0U3RhdHVzIEBkZWZhdWx0KE5FVykKICBwcmlvcml0eSAgICAgICAgUHJpb3JpdHkgICAgICAgQGRlZmF1bHQoTUVESVVNKQogIHNvdXJjZSAgICAgICAgICBTdHJpbmc/ICAgICAgICAvLyBlLmcuICJHb29nbGUgU2hlZXQgSW1wb3J0IgogIGFzc2lnbmVkVG8gICAgICBTdHJpbmc/CiAgdGFncyAgICAgICAgICAgIFN0cmluZ1tdICAgICAgIEBkZWZhdWx0KFtdKQogIG5vdGVzICAgICAgICAgICBTdHJpbmc/CgogIC8vIFNoZWV0IHN5bmMKICBzaGVldFJvd0luZGV4ICAgSW50PyAgICAgICAgICAgQHVuaXF1ZQogIGxhc3RTeW5jZWRBdCAgICBEYXRlVGltZT8KCiAgLy8gUmVsYXRpb25zCiAgYWN0aXZpdGllcyAgICAgIEFjdGl2aXR5W10KICB0YXNrcyAgICAgICAgICAgVGFza1tdCn0KCmVudW0gUHJvc3BlY3RTdGF0dXMgewogIE5FVwogIENPTlRBQ1RFRAogIFFVQUxJRklFRAogIFBST1BPU0FMX1NFTlQKICBORUdPVElBVElORwogIENMT1NFRF9XT04KICBDTE9TRURfTE9TVAogIE9OX0hPTEQKfQoKZW51bSBQcmlvcml0eSB7CiAgTE9XCiAgTUVESVVNCiAgSElHSAogIFVSR0VOVAp9Cgptb2RlbCBBY3Rpdml0eSB7CiAgaWQgICAgICAgICAgU3RyaW5nICAgICAgIEBpZCBAZGVmYXVsdChjdWlkKCkpCiAgY3JlYXRlZEF0ICAgRGF0ZVRpbWUgICAgIEBkZWZhdWx0KG5vdygpKQogIHVwZGF0ZWRBdCAgIERhdGVUaW1lICAgICBAdXBkYXRlZEF0CgogIHByb3NwZWN0SWQgIFN0cmluZwogIHByb3NwZWN0ICAgIFByb3NwZWN0ICAgICBAcmVsYXRpb24oZmllbGRzOiBbcHJvc3BlY3RJZF0sIHJlZmVyZW5jZXM6IFtpZF0sIG9uRGVsZXRlOiBDYXNjYWRlKQoKICB0eXBlICAgICAgICBBY3Rpdml0eVR5cGUKICBzdWJqZWN0ICAgICBTdHJpbmcKICBib2R5ICAgICAgICBTdHJpbmc/CiAgb3V0Y29tZSAgICAgU3RyaW5nPwogIGR1cmF0aW9uICAgIEludD8gICAgICAgICAvLyBtaW51dGVzCiAgb2NjdXJyZWRBdCAgRGF0ZVRpbWUgICAgIEBkZWZhdWx0KG5vdygpKQogIGNyZWF0ZWRCeSAgIFN0cmluZz8gICAgICAvLyB1c2VyIG5hbWUvZW1haWwKfQoKZW51bSBBY3Rpdml0eVR5cGUgewogIENBTEwKICBFTUFJTAogIE5PVEUKICBNRUVUSU5HCiAgU01TCiAgVk9JQ0VNQUlMCn0KCm1vZGVsIFRhc2sgewogIGlkICAgICAgICAgIFN0cmluZyAgICAgQGlkIEBkZWZhdWx0KGN1aWQoKSkKICBjcmVhdGVkQXQgICBEYXRlVGltZSAgIEBkZWZhdWx0KG5vdygpKQogIHVwZGF0ZWRBdCAgIERhdGVUaW1lICAgQHVwZGF0ZWRBdAoKICBwcm9zcGVjdElkICBTdHJpbmcKICBwcm9zcGVjdCAgICBQcm9zcGVjdCAgIEByZWxhdGlvbihmaWVsZHM6IFtwcm9zcGVjdElkXSwgcmVmZXJlbmNlczogW2lkXSwgb25EZWxldGU6IENhc2NhZGUpCgogIHRpdGxlICAgICAgIFN0cmluZwogIGRlc2NyaXB0aW9uIFN0cmluZz8KICBkdWVEYXRlICAgICBEYXRlVGltZT8KICBjb21wbGV0ZWRBdCBEYXRlVGltZT8KICBwcmlvcml0eSAgICBQcmlvcml0eSAgIEBkZWZhdWx0KE1FRElVTSkKICBhc3NpZ25lZFRvICBTdHJpbmc/CiAgc3RhdHVzICAgICAgVGFza1N0YXR1cyBAZGVmYXVsdChQRU5ESU5HKQp9CgplbnVtIFRhc2tTdGF0dXMgewogIFBFTkRJTkcKICBJTl9QUk9HUkVTUwogIENPTVBMRVRFRAogIENBTkNFTExFRAp9Cgptb2RlbCBTeW5jTG9nIHsKICBpZCAgICAgICAgICBTdHJpbmcgICBAaWQgQGRlZmF1bHQoY3VpZCgpKQogIGNyZWF0ZWRBdCAgIERhdGVUaW1lIEBkZWZhdWx0KG5vdygpKQogIHN0YXR1cyAgICAgIFN0cmluZyAgIC8vIHN1Y2Nlc3MgfCBlcnJvciB8IHBhcnRpYWwKICByb3dzUmVhZCAgICBJbnQgICAgICBAZGVmYXVsdCgwKQogIHJvd3NVcHNlcnRlZCBJbnQgICAgIEBkZWZhdWx0KDApCiAgcm93c1NraXBwZWQgSW50ICAgICAgQGRlZmF1bHQoMCkKICBlcnJvck1zZyAgICBTdHJpbmc/CiAgdHJpZ2dlcmVkQnkgU3RyaW5nPyAgLy8gbWFudWFsIHwgY3JvbiB8IHdlYmhvb2sKfQo=
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Prospect {
+  id              String   @id @default(cuid())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Identity
+  businessName    String
+  contactName     String?
+  title           String?
+  email           String?
+  phone           String?
+  website         String?
+
+  // Location
+  city            String?
+  state           String   @default("NJ")
+  zip             String?
+  address         String?
+
+  // Business
+  serviceType     String?   // e.g. Plumbing, HVAC, Roofing
+  licenseNumber   String?
+  yearsInBusiness Int?
+  employeeCount   String?   // range string e.g. "1-5"
+
+  // CRM
+  status          ProspectStatus @default(NEW)
+  priority        Priority       @default(MEDIUM)
+  source          String?        // e.g. "Google Sheet Import"
+  assignedTo      String?
+  tags            String[]       @default([])
+  notes           String?
+
+  // Sheet sync
+  sheetRowIndex   Int?           @unique
+  lastSyncedAt    DateTime?
+
+  // Relations
+  activities      Activity[]
+  tasks           Task[]
+}
+
+enum ProspectStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  PROPOSAL_SENT
+  NEGOTIATING
+  CLOSED_WON
+  CLOSED_LOST
+  ON_HOLD
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+model Activity {
+  id          String       @id @default(cuid())
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  prospectId  String
+  prospect    Prospect     @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+
+  type        ActivityType
+  subject     String
+  body        String?
+  outcome     String?
+  duration    Int?         // minutes
+  occurredAt  DateTime     @default(now())
+  createdBy   String?      // user name/email
+}
+
+enum ActivityType {
+  CALL
+  EMAIL
+  NOTE
+  MEETING
+  SMS
+  VOICEMAIL
+}
+
+model Task {
+  id          String     @id @default(cuid())
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  prospectId  String
+  prospect    Prospect   @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+
+  title       String
+  description String?
+  dueDate     DateTime?
+  completedAt DateTime?
+  priority    Priority   @default(MEDIUM)
+  assignedTo  String?
+  status      TaskStatus @default(PENDING)
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+model SyncLog {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  status      String   // success | error | partial
+  rowsRead    Int      @default(0)
+  rowsUpserted Int     @default(0)
+  rowsSkipped Int      @default(0)
+  errorMsg    String?
+  triggeredBy String?  // manual | cron | webhook
+}
