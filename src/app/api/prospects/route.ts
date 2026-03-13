@@ -1,1 +1,61 @@
-aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJwppbXBvcnQgeyBwcmlzbWEgfSBmcm9tICdAL2xpYi9kYicKaW1wb3J0IHsgUHJvc3BlY3RTdGF0dXMsIFByaW9yaXR5IH0gZnJvbSAnQHByaXNtYS9jbGllbnQnCgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcTogTmV4dFJlcXVlc3QpIHsKICBjb25zdCB7IHNlYXJjaFBhcmFtcyB9ID0gcmVxLm5leHRVcmwKICBjb25zdCBzZWFyY2ggPSBzZWFyY2hQYXJhbXMuZ2V0KCdzZWFyY2gnKSB8fCAnJwogIGNvbnN0IHN0YXR1cyA9IHNlYXJjaFBhcmFtcy5nZXQoJ3N0YXR1cycpCiAgY29uc3QgcHJpb3JpdHkgPSBzZWFyY2hQYXJhbXMuZ2V0KCdwcmlvcml0eScpCiAgY29uc3Qgc2VydmljZVR5cGUgPSBzZWFyY2hQYXJhbXMuZ2V0KCdzZXJ2aWNlVHlwZScpCiAgY29uc3QgY2l0eSA9IHNlYXJjaFBhcmFtcy5nZXQoJ2NpdHknKQogIGNvbnN0IGFzc2lnbmVkVG8gPSBzZWFyY2hQYXJhbXMuZ2V0KCdhc3NpZ25lZFRvJykKICBjb25zdCBwYWdlID0gcGFyc2VJbnQoc2VhcmNoUGFyYW1zLmdldCgncGFnZScpIHx8ICcxJykKICBjb25zdCBwYWdlU2l6ZSA9IHBhcnNlSW50KHNlYXJjaFBhcmFtcy5nZXQoJ3BhZ2VTaXplJykgfHwgJzI1JykKICBjb25zdCBzb3J0QnkgPSBzZWFyY2hQYXJhbXMuZ2V0KCdzb3J0QnknKSB8fCAnY3JlYXRlZEF0JwogIGNvbnN0IHNvcnRPcmRlciA9IChzZWFyY2hQYXJhbXMuZ2V0KCdzb3J0T3JkZXInKSB8fCAnZGVzYycpIGFzICdhc2MnIHwgJ2Rlc2MnCgogIGNvbnN0IHdoZXJlOiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPiA9IHt9CiAgaWYgKHNlYXJjaCkgewogICAgd2hlcmUuT1IgPSBbCiAgICAgIHsgYnVzaW5lc3NOYW1lOiB7IGNvbnRhaW5zOiBzZWFyY2gsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfSB9LAogICAgICB7IGNvbnRhY3ROYW1lOiB7IGNvbnRhaW5zOiBzZWFyY2gsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfSB9LAogICAgICB7IGVtYWlsOiB7IGNvbnRhaW5zOiBzZWFyY2gsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfSB9LAogICAgICB7IHBob25lOiB7IGNvbnRhaW5zOiBzZWFyY2gsIG1vZGU6ICdpbnNlbnNpdGl2ZScgfSB9LAogICAgICB7IGNpdHk6IHsgY29udGFpbnM6IHNlYXJjaCwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICAgIHsgc2VydmljZVR5cGU6IHsgY29udGFpbnM6IHNlYXJjaCwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9IH0sCiAgICBdCiAgfQogIGlmIChzdGF0dXMpIHdoZXJlLnN0YXR1cyA9IHN0YXR1cyBhcyBQcm9zcGVjdFN0YXR1cwogIGlmIChwcmlvcml0eSkgd2hlcmUucHJpb3JpdHkgPSBwcmlvcml0eSBhcyBQcmlvcml0eQogIGlmIChzZXJ2aWNlVHlwZSkgd2hlcmUuc2VydmljZVR5cGUgPSB7IGNvbnRhaW5zOiBzZXJ2aWNlVHlwZSwgbW9kZTogJ2luc2Vuc2l0aXZlJyB9CiAgaWYgKGNpdHkpIHdoZXJlLmNpdHkgPSB7IGNvbnRhaW5zOiBjaXR5LCBtb2RlOiAnaW5zZW5zaXRpdmUnIH0KICBpZiAoYXNzaWduZWRUbykgd2hlcmUuYXNzaWduZWRUbyA9IHsgY29udGFpbnM6IGFzc2lnbmVkVG8sIG1vZGU6ICdpbnNlbnNpdGl2ZScgfQoKICBjb25zdCBbdG90YWwsIHByb3NwZWN0c10gPSBhd2FpdCBQcm9taXNlLmFsbChbCiAgICBwcmlzbWEucHJvc3BlY3QuY291bnQoeyB3aGVyZSB9KSwKICAgIHByaXNtYS5wcm9zcGVjdC5maW5kTWFueSh7CiAgICAgIHdoZXJlLAogICAgICBvcmRlckJ5OiB7IFtzb3J0QnldOiBzb3J0T3JkZXIgfSwKICAgICAgc2tpcDogKHBhZ2UgLSAxKSAqIHBhZ2VTaXplLAogICAgICB0YWtlOiBwYWdlU2l6ZSwKICAgICAgaW5jbHVkZTogewogICAgICAgIF9jb3VudDogeyBzZWxlY3Q6IHsgYWN0aXZpdGllczogdHJ1ZSwgdGFza3M6IHRydWUgfSB9LAogICAgICB9LAogICAgfSksCiAgXSkKCiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsKICAgIGRhdGE6IHByb3NwZWN0cywKICAgIHRvdGFsLAogICAgcGFnZSwKICAgIHBhZ2VTaXplLAogICAgdG90YWxQYWdlczogTWF0aC5jZWlsKHRvdGFsIC8gcGFnZVNpemUpLAogIH0pCn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcTogTmV4dFJlcXVlc3QpIHsKICBjb25zdCBib2R5ID0gYXdhaXQgcmVxLmpzb24oKQogIGNvbnN0IHByb3NwZWN0ID0gYXdhaXQgcHJpc21hLnByb3NwZWN0LmNyZWF0ZSh7IGRhdGE6IGJvZHkgfSkKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBkYXRhOiBwcm9zcGVjdCB9LCB7IHN0YXR1czogMjAxIH0pCn0K
+import { NextRequest, NextResponse } from 'next/server'
+import { prisma } from '@/lib/db'
+import { ProspectStatus, Priority } from '@prisma/client'
+
+export async function GET(req: NextRequest) {
+  const { searchParams } = req.nextUrl
+  const search = searchParams.get('search') || ''
+  const status = searchParams.get('status')
+  const priority = searchParams.get('priority')
+  const serviceType = searchParams.get('serviceType')
+  const city = searchParams.get('city')
+  const assignedTo = searchParams.get('assignedTo')
+  const page = parseInt(searchParams.get('page') || '1')
+  const pageSize = parseInt(searchParams.get('pageSize') || '25')
+  const sortBy = searchParams.get('sortBy') || 'createdAt'
+  const sortOrder = (searchParams.get('sortOrder') || 'desc') as 'asc' | 'desc'
+
+  const where: Record<string, unknown> = {}
+  if (search) {
+    where.OR = [
+      { businessName: { contains: search, mode: 'insensitive' } },
+      { contactName: { contains: search, mode: 'insensitive' } },
+      { email: { contains: search, mode: 'insensitive' } },
+      { phone: { contains: search, mode: 'insensitive' } },
+      { city: { contains: search, mode: 'insensitive' } },
+      { serviceType: { contains: search, mode: 'insensitive' } },
+    ]
+  }
+  if (status) where.status = status as ProspectStatus
+  if (priority) where.priority = priority as Priority
+  if (serviceType) where.serviceType = { contains: serviceType, mode: 'insensitive' }
+  if (city) where.city = { contains: city, mode: 'insensitive' }
+  if (assignedTo) where.assignedTo = { contains: assignedTo, mode: 'insensitive' }
+
+  const [total, prospects] = await Promise.all([
+    prisma.prospect.count({ where }),
+    prisma.prospect.findMany({
+      where,
+      orderBy: { [sortBy]: sortOrder },
+      skip: (page - 1) * pageSize,
+      take: pageSize,
+      include: {
+        _count: { select: { activities: true, tasks: true } },
+      },
+    }),
+  ])
+
+  return NextResponse.json({
+    data: prospects,
+    total,
+    page,
+    pageSize,
+    totalPages: Math.ceil(total / pageSize),
+  })
+}
+
+export async function POST(req: NextRequest) {
+  const body = await req.json()
+  const prospect = await prisma.prospect.create({ data: body })
+  return NextResponse.json({ data: prospect }, { status: 201 })
+}
