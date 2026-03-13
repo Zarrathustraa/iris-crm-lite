@@ -1,1 +1,86 @@
-J3VzZSBjbGllbnQnCmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCcKaW1wb3J0IHsgRGFzaGJvYXJkU3RhdHMgfSBmcm9tICdAL3R5cGVzJwoKZnVuY3Rpb24gU3RhdENhcmQoeyBsYWJlbCwgdmFsdWUsIHN1YiB9OiB7IGxhYmVsOiBzdHJpbmc7IHZhbHVlOiBudW1iZXIgfCBzdHJpbmc7IHN1Yj86IHN0cmluZyB9KSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHAtNSBmbGV4IGZsZXgtY29sIGdhcC0xIj4KICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtZ3JheS01MDAgZm9udC1tZWRpdW0iPntsYWJlbH08L3A+CiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC0zeGwgZm9udC1ib2xkIHRleHQtZ3JheS05MDAiPnt2YWx1ZX08L3A+CiAgICAgIHtzdWIgJiYgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIHRleHQtZ3JheS00MDAiPntzdWJ9PC9wPn0KICAgIDwvZGl2PgogICkKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRGFzaGJvYXJkUGFnZSgpIHsKICBjb25zdCBbc3RhdHMsIHNldFN0YXRzXSA9IHVzZVN0YXRlPERhc2hib2FyZFN0YXRzIHwgbnVsbD4obnVsbCkKICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKQoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgZmV0Y2goJy9hcGkvZGFzaGJvYXJkJykKICAgICAgLnRoZW4ociA9PiByLmpzb24oKSkKICAgICAgLnRoZW4oaiA9PiBzZXRTdGF0cyhqLmRhdGEpKQogICAgICAuZmluYWxseSgoKSA9PiBzZXRMb2FkaW5nKGZhbHNlKSkKICB9LCBbXSkKCiAgaWYgKGxvYWRpbmcpIHJldHVybiA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgcHktMjAgdGV4dC1ncmF5LTQwMCI+TG9hZGluZyBkYXNoYm9hcmQuLi48L2Rpdj4KICBpZiAoIXN0YXRzKSByZXR1cm4gPGRpdiBjbGFzc05hbWU9InRleHQtY2VudGVyIHB5LTIwIHRleHQtcmVkLTUwMCI+RmFpbGVkIHRvIGxvYWQgc3RhdHM8L2Rpdj4KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTYiPgogICAgICA8ZGl2PgogICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LWdyYXktOTAwIj5EYXNoYm9hcmQ8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1ncmF5LTUwMCB0ZXh0LXNtIG10LTEiPk5KIEhvbWUtU2VydmljZSBDb250cmFjdG9yIE91dHJlYWNoPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTQgZ2FwLTQiPgogICAgICAgIDxTdGF0Q2FyZCBsYWJlbD0iVG90YWwgUHJvc3BlY3RzIiB2YWx1ZT17c3RhdHMudG90YWxQcm9zcGVjdHN9IC8+CiAgICAgICAgPFN0YXRDYXJkIGxhYmVsPSJOZXcgVGhpcyBXZWVrIiB2YWx1ZT17c3RhdHMubmV3VGhpc1dlZWt9IC8+CiAgICAgICAgPFN0YXRDYXJkIGxhYmVsPSJRdWFsaWZpZWQiIHZhbHVlPXtzdGF0cy5xdWFsaWZpZWRDb3VudH0gLz4KICAgICAgICA8U3RhdENhcmQgbGFiZWw9IkNsb3NlZCBXb24iIHZhbHVlPXtzdGF0cy5jbG9zZWRXb25Db3VudH0gLz4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIG1kOmdyaWQtY29scy00IGdhcC00Ij4KICAgICAgICA8U3RhdENhcmQgbGFiZWw9IkNvbnRhY3RlZCIgdmFsdWU9e3N0YXRzLmNvbnRhY3RlZENvdW50fSAvPgogICAgICAgIDxTdGF0Q2FyZCBsYWJlbD0iQ2xvc2VkIExvc3QiIHZhbHVlPXtzdGF0cy5jbG9zZWRMb3N0Q291bnR9IC8+CiAgICAgICAgPFN0YXRDYXJkIGxhYmVsPSJQZW5kaW5nIFRhc2tzIiB2YWx1ZT17c3RhdHMucGVuZGluZ1Rhc2tzQ291bnR9IC8+CiAgICAgICAgPFN0YXRDYXJkIGxhYmVsPSJPdmVyZHVlIFRhc2tzIiB2YWx1ZT17c3RhdHMub3ZlcmR1ZVRhc2tzQ291bnR9IHN1Yj17c3RhdHMub3ZlcmR1ZVRhc2tzQ291bnQgPiAwID8gJ05lZWRzIGF0dGVudGlvbicgOiAnQWxsIGNsZWFyJ30gLz4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIG1kOmdyaWQtY29scy0yIGdhcC02Ij4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTUiPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0iZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktODAwIG1iLTQiPlByb3NwZWN0cyBieSBTdGF0dXM8L2gyPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMiI+CiAgICAgICAgICAgIHtPYmplY3QuZW50cmllcyhzdGF0cy5ieVN0YXR1cykubWFwKChbc3RhdHVzLCBjb3VudF0pID0+ICgKICAgICAgICAgICAgICA8ZGl2IGtleT17c3RhdHVzfSBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gdGV4dC1ncmF5LTYwMCI+e3N0YXR1cy5yZXBsYWNlKC9fL2csICcgJyl9PC9zcGFuPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMjQgYmctZ3JheS0xMDAgcm91bmRlZC1mdWxsIGgtMiI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLWluZGlnby01MDAgaC0yIHJvdW5kZWQtZnVsbCIgc3R5bGU9e3sgd2lkdGg6IGAke01hdGgubWluKDEwMCwgKGNvdW50IC8gTWF0aC5tYXgoMSwgc3RhdHMudG90YWxQcm9zcGVjdHMpKSAqIDEwMCl9JWAgfX0gLz4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LW1lZGl1bSB3LTYgdGV4dC1yaWdodCI+e2NvdW50fTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJjYXJkIHAtNSI+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAgbWItNCI+QnkgU2VydmljZSBUeXBlPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTIiPgogICAgICAgICAgICB7T2JqZWN0LmVudHJpZXMoc3RhdHMuYnlTZXJ2aWNlVHlwZSkuc2xpY2UoMCwgOCkubWFwKChbdHlwZSwgY291bnRdKSA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e3R5cGV9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWdyYXktNjAwIj57dHlwZX08L3NwYW4+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy0yNCBiZy1ncmF5LTEwMCByb3VuZGVkLWZ1bGwgaC0yIj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctcHVycGxlLTUwMCBoLTIgcm91bmRlZC1mdWxsIiBzdHlsZT17eyB3aWR0aDogYCR7TWF0aC5taW4oMTAwLCAoY291bnQgLyBNYXRoLm1heCgxLCBzdGF0cy50b3RhbFByb3NwZWN0cykpICogMTAwKX0lYCB9fSAvPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXNtIGZvbnQtbWVkaXVtIHctNiB0ZXh0LXJpZ2h0Ij57Y291bnR9PC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzTmFtZT0iY2FyZCBwLTQiPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWdyYXktNTAwIj5BY3Rpdml0aWVzIHRoaXMgd2VlazogPHNwYW4gY2xhc3NOYW1lPSJmb250LXNlbWlib2xkIHRleHQtZ3JheS04MDAiPntzdGF0cy5hY3Rpdml0aWVzVGhpc1dlZWt9PC9zcGFuPjwvcD4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0K
+'use client'
+import { useEffect, useState } from 'react'
+import { DashboardStats } from '@/types'
+
+function StatCard({ label, value, sub }: { label: string; value: number | string; sub?: string }) {
+  return (
+    <div className="card p-5 flex flex-col gap-1">
+      <p className="text-sm text-gray-500 font-medium">{label}</p>
+      <p className="text-3xl font-bold text-gray-900">{value}</p>
+      {sub && <p className="text-xs text-gray-400">{sub}</p>}
+    </div>
+  )
+}
+
+export default function DashboardPage() {
+  const [stats, setStats] = useState<DashboardStats | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('/api/dashboard')
+      .then(r => r.json())
+      .then(j => setStats(j.data))
+      .finally(() => setLoading(false))
+  }, [])
+
+  if (loading) return <div className="text-center py-20 text-gray-400">Loading dashboard...</div>
+  if (!stats) return <div className="text-center py-20 text-red-500">Failed to load stats</div>
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+        <p className="text-gray-500 text-sm mt-1">NJ Home-Service Contractor Outreach</p>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <StatCard label="Total Prospects" value={stats.totalProspects} />
+        <StatCard label="New This Week" value={stats.newThisWeek} />
+        <StatCard label="Qualified" value={stats.qualifiedCount} />
+        <StatCard label="Closed Won" value={stats.closedWonCount} />
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <StatCard label="Contacted" value={stats.contactedCount} />
+        <StatCard label="Closed Lost" value={stats.closedLostCount} />
+        <StatCard label="Pending Tasks" value={stats.pendingTasksCount} />
+        <StatCard label="Overdue Tasks" value={stats.overdueTasksCount} sub={stats.overdueTasksCount > 0 ? 'Needs attention' : 'All clear'} />
+      </div>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="card p-5">
+          <h2 className="font-semibold text-gray-800 mb-4">Prospects by Status</h2>
+          <div className="space-y-2">
+            {Object.entries(stats.byStatus).map(([status, count]) => (
+              <div key={status} className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">{status.replace(/_/g, ' ')}</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-24 bg-gray-100 rounded-full h-2">
+                    <div className="bg-indigo-500 h-2 rounded-full" style={{ width: `${Math.min(100, (count / Math.max(1, stats.totalProspects)) * 100)}%` }} />
+                  </div>
+                  <span className="text-sm font-medium w-6 text-right">{count}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="card p-5">
+          <h2 className="font-semibold text-gray-800 mb-4">By Service Type</h2>
+          <div className="space-y-2">
+            {Object.entries(stats.byServiceType).slice(0, 8).map(([type, count]) => (
+              <div key={type} className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">{type}</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-24 bg-gray-100 rounded-full h-2">
+                    <div className="bg-purple-500 h-2 rounded-full" style={{ width: `${Math.min(100, (count / Math.max(1, stats.totalProspects)) * 100)}%` }} />
+                  </div>
+                  <span className="text-sm font-medium w-6 text-right">{count}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="card p-4">
+        <p className="text-sm text-gray-500">Activities this week: <span className="font-semibold text-gray-800">{stats.activitiesThisWeek}</span></p>
+      </div>
+    </div>
+  )
+}
