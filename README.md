@@ -1,1 +1,44 @@
-IyBJUklTIENSTSBMaXRlCgpBIGxpZ2h0d2VpZ2h0IENSTSBhcHBsaWNhdGlvbiBidWlsdCB3aXRoIE5leHQuanMgMTQsIFR5cGVTY3JpcHQsIFRhaWx3aW5kIENTUywgYW5kIFByaXNtYS4KCiMjIEZlYXR1cmVzCgotICoqUHJvc3BlY3RzIE1hbmFnZW1lbnQqKiDigJQgVHJhY2sgbGVhZHMgYW5kIGNvbnRhY3RzIHdpdGggZnVsbCBDUlVEIG9wZXJhdGlvbnMKLSAqKkFjdGl2aXR5IFRpbWVsaW5lKiog4oCUIExvZyBjYWxscywgZW1haWxzLCBtZWV0aW5ncywgYW5kIG5vdGVzIHBlciBwcm9zcGVjdAotICoqVGFzayBNYW5hZ2VtZW50Kiog4oCUIENyZWF0ZSBhbmQgdHJhY2sgZm9sbG93LXVwIHRhc2tzIHdpdGggZHVlIGRhdGVzCi0gKipEYXNoYm9hcmQqKiDigJQgT3ZlcnZpZXcgc3RhdHM6IHRvdGFsIHByb3NwZWN0cywgb3BlbiB0YXNrcywgcmVjZW50IGFjdGl2aXRpZXMKLSAqKkdvb2dsZSBTaGVldHMgSW1wb3J0Kiog4oCUIEltcG9ydCBwcm9zcGVjdCBkYXRhIGRpcmVjdGx5IGZyb20gR29vZ2xlIFNoZWV0cwoKIyMgVGVjaCBTdGFjawoKLSAqKkZyYW1ld29yayoqOiBOZXh0LmpzIDE0IChBcHAgUm91dGVyKQotICoqTGFuZ3VhZ2UqKjogVHlwZVNjcmlwdAotICoqU3R5bGluZyoqOiBUYWlsd2luZCBDU1MKLSAqKkRhdGFiYXNlIE9STSoqOiBQcmlzbWEKLSAqKkRhdGFiYXNlKio6IFNRTGl0ZSAoZGV2KSAvIFBvc3RncmVTUUwgKHByb2QpCgojIyBHZXR0aW5nIFN0YXJ0ZWQKCmBgYGJhc2gKbnBtIGluc3RhbGwKbnB4IHByaXNtYSBtaWdyYXRlIGRldgpucG0gcnVuIGRldgpgYGAKCkNvcHkgYC5lbnYuZXhhbXBsZWAgdG8gYC5lbnYubG9jYWxgIGFuZCBmaWxsIGluIHlvdXIgZW52aXJvbm1lbnQgdmFyaWFibGVzLgoKIyMgUHJvamVjdCBTdHJ1Y3R1cmUKCmBgYApzcmMvCiAgYXBwLwogICAgYXBpLyAgICAgICAgICAjIEFQSSByb3V0ZXMgKHByb3NwZWN0cywgYWN0aXZpdGllcywgdGFza3MsIGRhc2hib2FyZCwgaW1wb3J0KQogICAgZGFzaGJvYXJkLyAgICAjIERhc2hib2FyZCBwYWdlCiAgY29tcG9uZW50cy8gICAgICMgU2hhcmVkIFVJIGNvbXBvbmVudHMKICBsaWIvICAgICAgICAgICAgIyBEYXRhYmFzZSBjbGllbnQsIHV0aWxpdGllcywgaW1wb3J0IGhlbHBlcnMKICB0eXBlcy8gICAgICAgICAgIyBUeXBlU2NyaXB0IHR5cGUgZGVmaW5pdGlvbnMKcHJpc21hLwogIHNjaGVtYS5wcmlzbWEgICAjIERhdGFiYXNlIHNjaGVtYQogIHNlZWQudHMgICAgICAgICAjIFNlZWQgZGF0YQpgYGAK
+# IRIS CRM Lite
+
+A lightweight CRM application built with Next.js 14, TypeScript, Tailwind CSS, and Prisma.
+
+## Features
+
+- **Prospects Management** — Track leads and contacts with full CRUD operations
+- **Activity Timeline** — Log calls, emails, meetings, and notes per prospect
+- **Task Management** — Create and track follow-up tasks with due dates
+- **Dashboard** — Overview stats: total prospects, open tasks, recent activities
+- **Google Sheets Import** — Import prospect data directly from Google Sheets
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Database ORM**: Prisma
+- **Database**: SQLite (dev) / PostgreSQL (prod)
+
+## Getting Started
+
+```bash
+npm install
+npx prisma migrate dev
+npm run dev
+```
+
+Copy `.env.example` to `.env.local` and fill in your environment variables.
+
+## Project Structure
+
+```
+src/
+  app/
+    api/          # API routes (prospects, activities, tasks, dashboard, import)
+    dashboard/    # Dashboard page
+  components/     # Shared UI components
+  lib/            # Database client, utilities, import helpers
+  types/          # TypeScript type definitions
+prisma/
+  schema.prisma   # Database schema
+  seed.ts         # Seed data
+```
