@@ -1,61 +1,54 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/db'
-import { ProspectStatus, Priority } from '@prisma/client'
+import { prisma } from '@/lib/prisma'
 
-export async function GET(req: NextRequest) {
-  const { searchParams } = req.nextUrl
-  const search = searchParams.get('search') || ''
-  const status = searchParams.get('status')
-  const priority = searchParams.get('priority')
-  const serviceType = searchParams.get('serviceType')
-  const city = searchParams.get('city')
-  const assignedTo = searchParams.get('assignedTo')
-  const page = parseInt(searchParams.get('page') || '1')
-  const pageSize = parseInt(searchParams.get('pageSize') || '25')
-  const sortBy = searchParams.get('sortBy') || 'createdAt'
-  const sortOrder = (searchParams.get('sortOrder') || 'desc') as 'asc' | 'desc'
+export const dynamic = 'force-dynamic'
 
-  const where: Record<string, unknown> = {}
-  if (search) {
-    where.OR = [
-      { businessName: { contains: search, mode: 'insensitive' } },
-      { contactName: { contains: search, mode: 'insensitive' } },
-      { email: { contains: search, mode: 'insensitive' } },
-      { phone: { contains: search, mode: 'insensitive' } },
-      { city: { contains: search, mode: 'insensitive' } },
-      { serviceType: { contains: search, mode: 'insensitive' } },
-    ]
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url)
+    const status = searchParams.get('status')
+    const search = searchParams.get('search')
+    const page = parseInt(searchParams.get('page') || '1')
+    const limit = parseInt(searchParams.get('limit') || '50')
+
+    const where: Record<string, unknown> = {}
+    if (status && status !== 'all') where.status = status
+    if (search) {
+      where.OR = [
+        { companyName: { contains: search, mode: 'insensitive' } },
+        { contactName: { contains: search, mode: 'insensitive' } },
+        { phone: { contains: search } },
+        { email: { contains: search, mode: 'insensitive' } },
+      ]
+    }
+
+    const [prospects, total] = await Promise.all([
+      prisma.prospect.findMany({
+        where,
+        include: {
+          _count: { select: { activities: true, tasks: true } },
+        },
+        orderBy: { updatedAt: 'desc' },
+        skip: (page - 1) * limit,
+        take: limit,
+      }),
+      prisma.prospect.count({ where }),
+    ])
+
+    return NextResponse.json({ prospects, total, page, limit })
+  } catch (error) {
+    console.error('Prospects API error:', error)
+    return NextResponse.json({ prospects: [], total: 0, page: 1, limit: 50 })
   }
-  if (status) where.status = status as ProspectStatus
-  if (priority) where.priority = priority as Priority
-  if (serviceType) where.serviceType = { contains: serviceType, mode: 'insensitive' }
-  if (city) where.city = { contains: city, mode: 'insensitive' }
-  if (assignedTo) where.assignedTo = { contains: assignedTo, mode: 'insensitive' }
-
-  const [total, prospects] = await Promise.all([
-    prisma.prospect.count({ where }),
-    prisma.prospect.findMany({
-      where,
-      orderBy: { [sortBy]: sortOrder },
-      skip: (page - 1) * pageSize,
-      take: pageSize,
-      include: {
-        _count: { select: { activities: true, tasks: true } },
-      },
-    }),
-  ])
-
-  return NextResponse.json({
-    data: prospects,
-    total,
-    page,
-    pageSize,
-    totalPages: Math.ceil(total / pageSize),
-  })
 }
 
-export async function POST(req: NextRequest) {
-  const body = await req.json()
-  const prospect = await prisma.prospect.create({ data: body })
-  return NextResponse.json({ data: prospect }, { status: 201 })
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json()
+    const prospect = await prisma.prospect.create({ data: body })
+    return NextResponse.json(prospect, { status: 201 })
+  } catch (error) {
+    console.error('Create prospect error:', error)
+    return NextResponse.json({ error: 'Failed to create prospect' }, { status: 500 })
+  }
 }
