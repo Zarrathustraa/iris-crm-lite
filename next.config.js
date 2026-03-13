@@ -1,1 +1,8 @@
-LyoqIEB0eXBlIHtpbXBvcnQoJ25leHQnKS5OZXh0Q29uZmlnfSAqLwpjb25zdCBuZXh0Q29uZmlnID0gewogIGV4cGVyaW1lbnRhbDogewogICAgc2VydmVyQ29tcG9uZW50c0V4dGVybmFsUGFja2FnZXM6IFsnQHByaXNtYS9jbGllbnQnLCAncHJpc21hJ10KICB9Cn0KCm1vZHVsZS5leHBvcnRzID0gbmV4dENvbmZpZwo=
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ['@prisma/client', 'prisma']
+  }
+}
+
+module.exports = nextConfig
