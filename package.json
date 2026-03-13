@@ -1,1 +1,46 @@
-ewogICJuYW1lIjogImlyaXMtY3JtLWxpdGUiLAogICJ2ZXJzaW9uIjogIjAuMS4wIiwKICAicHJpdmF0ZSI6IHRydWUsCiAgInNjcmlwdHMiOiB7CiAgICAiZGV2IjogIm5leHQgZGV2IiwKICAgICJidWlsZCI6ICJuZXh0IGJ1aWxkIiwKICAgICJzdGFydCI6ICJuZXh0IHN0YXJ0IiwKICAgICJsaW50IjogIm5leHQgbGludCIsCiAgICAiZGI6Z2VuZXJhdGUiOiAicHJpc21hIGdlbmVyYXRlIiwKICAgICJkYjpwdXNoIjogInByaXNtYSBkYiBwdXNoIiwKICAgICJkYjptaWdyYXRlIjogInByaXNtYSBtaWdyYXRlIGRldiIsCiAgICAiZGI6c3R1ZGlvIjogInByaXNtYSBzdHVkaW8iLAogICAgImRiOnNlZWQiOiAidHMtbm9kZSAtLXByb2plY3QgdHNjb25maWcuanNvbiBwcmlzbWEvc2VlZC50cyIsCiAgICAiaW1wb3J0OnNoZWV0IjogInRzLW5vZGUgLS1wcm9qZWN0IHRzY29uZmlnLmpzb24gc3JjL2xpYi9pbXBvcnQtc2hlZXQudHMiCiAgfSwKICAiZGVwZW5kZW5jaWVzIjogewogICAgIkBwcmlzbWEvY2xpZW50IjogIl41LjEwLjAiLAogICAgIkB0YW5zdGFjay9yZWFjdC1xdWVyeSI6ICJeNS4yOC4wIiwKICAgICJAdGFuc3RhY2svcmVhY3QtdGFibGUiOiAiXjguMTMuMiIsCiAgICAiYXhpb3MiOiAiXjEuNi43IiwKICAgICJjbHN4IjogIl4yLjEuMCIsCiAgICAiZGF0ZS1mbnMiOiAiXjMuMy4xIiwKICAgICJnb29nbGVhcGlzIjogIl4xNDAuMC4wIiwKICAgICJsdWNpZGUtcmVhY3QiOiAiXjAuMzQ0LjAiLAogICAgIm5leHQiOiAiMTQuMS4zIiwKICAgICJyZWFjdCI6ICJeMTgiLAogICAgInJlYWN0LWRvbSI6ICJeMTgiLAogICAgInJlYWN0LWhvb2stZm9ybSI6ICJeNy41MS4wIiwKICAgICJ0YWlsd2luZC1tZXJnZSI6ICJeMi4yLjEiLAogICAgInpvZCI6ICJeMy4yMi40IgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAdHlwZXMvbm9kZSI6ICJeMjAiLAogICAgIkB0eXBlcy9yZWFjdCI6ICJeMTgiLAogICAgIkB0eXBlcy9yZWFjdC1kb20iOiAiXjE4IiwKICAgICJhdXRvcHJlZml4ZXIiOiAiXjEwLjAuMSIsCiAgICAiZXNsaW50IjogIl44IiwKICAgICJlc2xpbnQtY29uZmlnLW5leHQiOiAiMTQuMS4zIiwKICAgICJwb3N0Y3NzIjogIl44IiwKICAgICJwcmlzbWEiOiAiXjUuMTAuMCIsCiAgICAidGFpbHdpbmRjc3MiOiAiXjMuMy4wIiwKICAgICJ0cy1ub2RlIjogIl4xMC45LjIiLAogICAgInR5cGVzY3JpcHQiOiAiXjUiCiAgfQp9Cg==
+{
+  "name": "iris-crm-lite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:seed": "ts-node --project tsconfig.json prisma/seed.ts",
+    "import:sheet": "ts-node --project tsconfig.json src/lib/import-sheet.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "@tanstack/react-query": "^5.28.0",
+    "@tanstack/react-table": "^8.13.2",
+    "axios": "^1.6.7",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.3.1",
+    "googleapis": "^140.0.0",
+    "lucide-react": "^0.344.0",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.0",
+    "tailwind-merge": "^2.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3",
+    "postcss": "^8",
+    "prisma": "^5.10.0",
+    "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
