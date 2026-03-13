@@ -1,13 +1,1 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/db'
-
-export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
-  const body = await req.json()
-  const task = await prisma.task.update({ where: { id: params.id }, data: body })
-  return NextResponse.json({ data: task })
-}
-
-export async function DELETE(_: NextRequest, { params }: { params: { id: string } }) {
-  await prisma.task.delete({ where: { id: params.id } })
-  return NextResponse.json({ success: true })
-}
+aW1wb3J0IHsgTmV4dFJlcXVlc3QsIE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJwppbXBvcnQgeyBwcmlzbWEgfSBmcm9tICdAL2xpYi9kYicKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQQVRDSChyZXE6IE5leHRSZXF1ZXN0LCB7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBpZDogc3RyaW5nIH0gfSkgewogIGNvbnN0IGJvZHkgPSBhd2FpdCByZXEuanNvbigpCiAgY29uc3QgdGFzayA9IGF3YWl0IHByaXNtYS50YXNrLnVwZGF0ZSh7IHdoZXJlOiB7IGlkOiBwYXJhbXMuaWQgfSwgZGF0YTogYm9keSB9KQogIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IGRhdGE6IHRhc2sgfSkKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIERFTEVURShfOiBOZXh0UmVxdWVzdCwgeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgaWQ6IHN0cmluZyB9IH0pIHsKICBhd2FpdCBwcmlzbWEudGFzay5kZWxldGUoeyB3aGVyZTogeyBpZDogcGFyYW1zLmlkIH0gfSkKICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzdWNjZXNzOiB0cnVlIH0pCn0K
